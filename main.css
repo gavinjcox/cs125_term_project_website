@@ -4,3 +4,8 @@ body {
     font-family: sans-serif, Arial, Times New Roman;
     font-size: 16px;
 }
+
+p {
+    font-size: 1em;
+    line-height: 110%;
+}
