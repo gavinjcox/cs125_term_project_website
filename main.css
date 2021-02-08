@@ -1,5 +1,8 @@
 ﻿/* Gavin Cox 02/07/2021 CS 125H - Lab 3*/
 
+main{
+    clear: left;
+}
 body {
     font-family: sans-serif, Arial, Times New Roman;
     font-size: 16px;
@@ -9,3 +12,41 @@ p {
     font-size: 1em;
     line-height: 110%;
 }
+
+main h2{
+    color: blue;
+}
+
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    color: red;
+}
+
+p::first-letter{
+    font-weight: bold;
+}
+
+#dog_picture{
+    text-shadow: 2px 2px blue;
+}
+
+header img{
+    float: left;
+    margin-right: 5px;
+}
+
+footer{
+    text-align: center;
+}
+
+.likeordislike{
+    color: blue;
+}
+
