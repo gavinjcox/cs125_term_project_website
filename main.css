@@ -1,52 +1,116 @@
-/* Gavin Cox 02/07/2021 CS 125H - Lab 3*/
+/* Gavin Cox 02/11/2021 CS 125H - Lab 4*/
 
-main{
-    clear: left;
+/*This is the reset selector*/
+* {
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    font-size: 16px; /*This is put on all of html so 1em is equal to 16px on all browsers*/
+    height: 100%; /*Was told there is a beter way to acomplish what i'm trying to do here*/
+    width: 100%; /*Was told there is a beter way to acomplish what i'm trying to do here*/
+    background-image: linear-gradient(to bottom right, #023047, #219EBC, #8ECAE6, #FFB703, #FB8500);
+}
+
+/*These are the styles for the body*/
 body {
-    font-family: sans-serif, Arial, Times New Roman;
-    font-size: 16px;
-}
-
-p {
+    height: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Verdana, Arial, Arial, Helvetica, sans-serif;
     font-size: 1em;
-    line-height: 110%;
+    line-height: 1em;
 }
-
-main h2{
-    color: blue;
-}
-
-a:link{
-    color: blue;
-}
-
-a:visited{
-    color: purple;
-}
-
-a:hover{
+ 
+/*These are the stlyes for my anchor tags, they help with accessibilty*/
+a:hover, a:focus{
     color: red;
 }
 
-p::first-letter{
-    font-weight: bold;
+a:link{
+    color: #FFB703
 }
 
-#dog_picture{
-    text-shadow: 2px 2px blue;
+/*These are the styles for the header*/
+header{
+    margin: .5em;
 }
 
+/*These are the styles for any img in the header*/
 header img{
+    margin-right: .5em;
     float: left;
-    margin-right: 5px;
+    border: 2px solid #023047;
 }
 
-footer{
+/*These are the stlyes for h1 in the header, color is Prussian Blue*/
+header h1{
+    color: #FFB703;
+}
+
+/*These are the styles for my links in the header*/
+header a{
+    display: block;
+}
+
+/*These are the styles for main*/
+main{
+    height: 800px;
+    clear: left;
+}
+
+/*These are the styles for p in main*/
+main p{
+    margin: 1em;
+}
+
+/*These are the styles for h2 in main*/
+    main h2 {
+        text-align: center;
+        margin: 2em;
+        clear: both;
+        color: #FB8500;
+    }
+
+/*This is for first p with id "dogdesc"*/
+#dogdesc {
+    margin-bottom: 4em;
+}
+
+/*These are the styles for the section with id "doglikes"*/
+#doglikes {
+    display: flex;
     text-align: center;
 }
 
-.likeordislike{
-    color: green;
+#doglikes h3{
+    color: #023047;
 }
 
+/*These are the stlyes for the id "dog_pictures"*/
+#dog_pictures{
+    margin-top: 15em; /*All I needed to do here is move all of dogpictures near the bottom, closer to the footer than main. I tried everything i thought was better but ended up doing this*/
+    margin-left: auto;
+    margin-right: auto;
+    color: #FB8500; /*Blue Green*/
+}
+
+#dog_pictures img{
+    display: block;
+    border: 2px solid #023047;
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*These are the styles for the footer*/
+footer{
+    margin-top: 2em;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+}
+ 
