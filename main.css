@@ -117,16 +117,19 @@ main section img{
 
 /*These are the styles for the footer*/
 footer{
+    max-width: 1000px;
     width: 100%;
-    position: fixed;
+    position: absolute;
+    height: 1em;
+    text-align: center;
     bottom: 0;
     padding: 1em;
+    margin: auto;
     overflow: hidden;
 }
 
 footer p{
-    position: relative;
+    width: 100%;
     text-align: center;
     font-size: .7em;
 }
- 
