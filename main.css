@@ -13,8 +13,8 @@ html {
 
 /*These are the styles for the body*/
 body {
+    width: 50%;
     background-image: linear-gradient(to bottom right, #023047, #219EBC, #8ECAE6, #FFB703, #FB8500);
-    max-width: 1000px;
     height: 100%;
     margin: auto;
     font-family: Verdana, Arial, Arial, Helvetica, sans-serif;
@@ -30,21 +30,21 @@ p {
     font-size: 1em;
     line-height: 1em;
 }
- 
+
 /*These are the stlyes for my anchor tags, they help with accessibilty*/
 a:link {
     color: #FFB703;
     text-decoration: none;
 }
 
-a:hover, a:focus{
+a:hover, a:focus {
     color: red;
 }
 
 
 
 /*These are the styles for the header*/
-header{
+header {
     display: flex;
     align-content: flex-start;
     padding: 1em;
@@ -52,52 +52,52 @@ header{
     border-bottom: 2px solid black;
 }
 
-/*These are the styles for any img in the header*/
-header img{
-    margin: .5em;
-    max-height: 100px;
-    float: left;
-    border: 2px solid #023047;
-}
+    /*These are the styles for any img in the header*/
+    header img {
+        margin: .5em;
+        max-height: 100px;
+        float: left;
+        border: 2px solid #023047;
+    }
 
-/*These are the stlyes for h1 in the header and h2 in main, color is Prussian Blue*/
-header h1, main h2{
-    font-variant: small-caps;
-    text-shadow: 1px 1px 1px #023047;
-    color: #FFB703;
-}
+    /*These are the stlyes for h1 in the header and h2 in main, color is Prussian Blue*/
+    header h1, main h2 {
+        font-variant: small-caps;
+        text-shadow: 1px 1px 1px #023047;
+        color: #FFB703;
+    }
 
 /*These are the styles for main*/
-main{
+main {
     margin: 1em 0;
     padding: 1em;
     clear: left;
     overflow: hidden;
 }
 
-main p{
-    margin-top: 2em;
-}
+    main p {
+        margin-top: 2em;
+    }
 
-/*These are the styles for h2 in main*/
-main h2 {
-    margin: 1em;
-    text-align: center;
-    font-size: 1.8em;
-    color: #FB8500;
-}
+    /*These are the styles for h2 in main*/
+    main h2 {
+        margin: 1em;
+        text-align: center;
+        font-size: 1.8em;
+        color: #FB8500;
+    }
 
-section{
+section {
     display: flex;
 }
 
-main section article{
+main section article {
     width: 50%;
     margin-top: 2em;
     display: block;
 }
 
-main section h3, main section p{
+main section h3, main section p {
     display: flex;
     color: #023047;
 }
@@ -105,20 +105,19 @@ main section h3, main section p{
 /*These are the stlyes for the id "dog_pictures"*/
 main section #dogpictures {
     display: flex;
-    margin-top: 100px;
     color: #FB8500; /*Blue Green*/
 }
 
 
-main section img{
+main section img {
     border: 2px solid #023047;
     max-height: 200px;
 }
 
 /*These are the styles for the footer*/
-footer{
-    max-width: 950px;
-    width: 100%;
+footer {
+    display: block;
+    width: 50%;
     position: absolute;
     height: 1em;
     text-align: center;
@@ -128,8 +127,7 @@ footer{
     overflow: hidden;
 }
 
-footer p{
-    width: 100%;
-    text-align: center;
-    font-size: .7em;
-}
+    footer p {
+        text-align: center;
+        font-size: .7em;
+    }
